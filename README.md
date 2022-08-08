@@ -12,3 +12,6 @@
 
 >클래스의 특정 동작(behavior)에 대한 책임을 클래스 외부에서 담당할 수 있을까?
 - [방문자](https://github.com/lsn1106/Design-Pattern-with-Go/tree/main/visitor) 
+
+>특정 알고리즘을 다양한 변형으로 구현할 때, SRP를 위반하지 않으면서 중복 코드를 제거할 수 있을까?
+- [템플릿 메서드](https://github.com/lsn1106/Design-Pattern-with-Go/tree/main/template_method) 
