@@ -10,14 +10,14 @@ type IOtp interface {
 }
 
 type Otp struct {
-	IOtp IOtp
+	IOtp
 }
 
 func (o *Otp) GenAndSendOTP(otpLength int) error {
-	otp := o.IOtp.GenRandomOTP(otpLength)
-	o.IOtp.SaveOTPCache(otp)
-	message := o.IOtp.GetMessage(otp)
-	err := o.IOtp.SendNotification(message)
+	otp := o.GenRandomOTP(otpLength)
+	o.SaveOTPCache(otp)
+	message := o.GetMessage(otp)
+	err := o.SendNotification(message)
 	if err != nil {
 		return err
 	}
